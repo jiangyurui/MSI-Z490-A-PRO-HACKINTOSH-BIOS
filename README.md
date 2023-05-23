@@ -1,2 +1,85 @@
 # MSI-Z490-A-PRO-HACKINTOSH-BIOS
 刷入此bios即可免去硬盘和U盘引导直接安装macOS系统
+黑苹果之微星Z490-A PRO免引导白苹果化（目前支持CATALINA到ventura系统）
+
+为了建立一个黑苹果新手使用macOS系统的方式（类似于以前OZMOSIS一样），可以让使用者不用去关心bootloader设置问题，直接使用即好（当然万事万物都是一分为二，因为深度定制导致灵活性会差一些，你觉得不好可能是因为你没有这方面的需求，这个对黑苹果新手来说是非常友好的）； It's a thing like OZMOSIS,you can flash it then you can install macOS without bootloader anymore.
+
+如果需要定制其他主板BIOS可咨询https://jiangyurui.taobao.com/ ；
+
+硬件支持列表
+
+Hardware support:：
+
+1.CPU目前支持10代I3-I9酷睿全系；
+
+The CPU currently supports the entire 10th generation Core series（I3-I9）;
+
+2.显卡支持RX460，470，480，560，570，580，590，5500xt，5600xt，5700xt，6600，6600xt，6800xt，6900xt等免驱显卡；
+
+The graphics card supports RX460, 470, 480, 560, 570, 580, 590, 5500xt, 5600xt, 5700xt, 6600, 6600xt, 6800xt, 6900xt and other drive-free graphics cards;
+
+3.其他硬件请选择黑苹果支持的型号即可；
+
+Please select other hardware which can be supported in hackintosh;
+
+4.板载声卡驱动；
+
+The onboard Audio already be driven ;
+
+功能支持列表：
+
+Feature support
+
+1.支持Catalina至ventura系统；
+
+Support Catalina to Ventura;
+
+2.CPU超线程和全核心都可正常使用；
+
+The CPU hyperthreading and all cores can be used normally ;
+
+3.声卡和有线无线网卡正常使用；
+
+The sound card and wired network card can be used normally;
+
+4.定制USB2.0和USB3.0（由于数量超15个，所以主板后置USB3.0上无法使用USB2.0设备，前置USB3.0无此问题）；
+
+Customize USB2.0 and USB3.0
+
+5.macOS和Windows双系统（需要使用BootCamp来安装）；
+
+Support macOS and Windows(Windows need to use BootCamp to install);
+
+6.Appstore正常使用，AppleID正常登录；
+
+The Appstore and AppleID is used normally;
+
+7.istat menus正常使用；
+
+istat menus are used normally;
+
+8.双显卡驱动，其中核显加速功能（FCPX必须）；
+
+10-generation'Graphpics card has been driven, an it's best for Final Cut Pro;
+
+9.睡眠，休眠正常使用，原生NVRAM，AppleDRM；
+
+Sleep, hibernate，NVRAM and AppleDRM can be used normally；
+
+10.其余无法使用可留言；
+
+使用方法：
+
+Instructions:
+
+1.请下载对应BIOS文件并解压，用微星EZ Flash 功能刷入主板（具体方法请搜索各大搜索引擎查看）；
+
+Please download the BIOS file and use the  EZ Flash  to flash the motherboard'Bios (please search all major search engines for specific methods);
+
+2.刷入成功后，请准备一个Fat32格式U盘，把附带的EFI文件或者任意黑苹果引导EFI文件拷贝到U盘，然后用此U盘引导（引导后的第一个界面即可，无需进入系统)进行主板免引导激活，激活后就不再需要U盘，以后都是直接安装系统和使用系统；
+
+After the flashing is successful, please prepare a Fat32 format U disk, copy the attached EFI file or any EFI file to the U disk, and then use this U disk to boot to activate the motherboard. After activation, the U disk is no longer needed, and the system will be installed and used directly in the future;
+
+3.如果安装了双系统后需要切换系统的话，在开机出现主板LOGO时点击OPTION健（PC键盘为windows键或ALT键），直到左上角出现盘符选择界面即可；
+
+If you need to switch the system after installing macOS and Windows, click the OPTION key when the motherboard LOGO appears at the boot (the PC keyboard is the Win key or the ALT key), until the drive letter selection interface appears in the upper left corner;
